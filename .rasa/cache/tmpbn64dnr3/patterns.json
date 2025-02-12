@@ -1,0 +1,18 @@
+[
+  {
+    "name": "operation",
+    "pattern": "[+\\-*/=]"
+  },
+  {
+    "name": "unknown",
+    "pattern": "[xX]"
+  },
+  {
+    "name": "operation",
+    "pattern": "(\\b\"\\ \\+\\ \"\\b|\\b\"\\ \\-\\ \"\\b|\\b\"\\ \\*\\ \"\\b|\\b\"\\ /\\ \"\\b|\\b\"\\ =\\ \"\\b)"
+  },
+  {
+    "name": "unknown",
+    "pattern": "(\\b\"\\ x\\ \"\\b)"
+  }
+]

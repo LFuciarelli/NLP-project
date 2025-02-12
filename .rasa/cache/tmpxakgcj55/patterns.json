@@ -1,0 +1,38 @@
+[
+  {
+    "name": "symbol",
+    "pattern": "<"
+  },
+  {
+    "name": "symbol",
+    "pattern": "="
+  },
+  {
+    "name": "symbol",
+    "pattern": ">"
+  },
+  {
+    "name": "symbol",
+    "pattern": "\\*"
+  },
+  {
+    "name": "symbol",
+    "pattern": "\\+"
+  },
+  {
+    "name": "symbol",
+    "pattern": "\\-"
+  },
+  {
+    "name": "symbol",
+    "pattern": "\\/"
+  },
+  {
+    "name": "symbol",
+    "pattern": "x"
+  },
+  {
+    "name": "operation",
+    "pattern": "(\\bplus\\b|\\bminus\\b|\\btimes\\b|\\bdivide\\b|\\bgreater\\b|\\bless\\b|\\bequal\\b)"
+  }
+]

@@ -1,0 +1,66 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - solve_equation
+
+entities:
+  - number
+  - unknown
+  - operation
+  - multby
+
+slots:
+  numbers:
+    type: list
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: number
+  
+  operations:
+    type: list
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: operation
+
+  unknowns:
+    type: list
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: unknown
+  
+  multby:
+    type: list
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: multby
+    
+
+responses:
+  utter_greet:
+  - text: "Hello, I'm Euler, a bot designed to solve math word problems."
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+actions:
+  - action_solve_equation
+
+policies:
+  - name: MemoizationPolicy
+  - name: TEDPolicy
+    max_history: 5
+  - name: RulePolicy
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

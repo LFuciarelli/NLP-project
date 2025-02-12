@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-operation",
+      "2": "I-operation",
+      "3": "L-operation",
+      "4": "U-operation",
+      "5": "B-unknown",
+      "6": "I-unknown",
+      "7": "L-unknown",
+      "8": "U-unknown",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-operation": 1,
+      "I-operation": 2,
+      "L-operation": 3,
+      "U-operation": 4,
+      "B-unknown": 5,
+      "I-unknown": 6,
+      "L-unknown": 7,
+      "U-unknown": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

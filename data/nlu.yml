@@ -1,0 +1,155 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good night
+    - bye
+    - goodbye
+    - good bye
+    - have a nice day
+    - see you
+    - bye bye
+    - see you later
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: solve_equation
+  examples: |
+    - Fifteen [more](operation) than [a quarter](multby) of [a number](unknown) [is](operation) 27. What is the number?
+    - Five [more](operation) than three [times](operation) [a number](unknown) [is](operation) twenty six. What is the value?
+    - If you [double](multby) [a number](unknown) and [add](operation) 5 to the result, then that [is](operation) 20 [more](operation) than [half](multby) of the [original number](multby). What's the original number?	
+    - Ten [more](operation) than the [product](operation) of three and [a number](unknown) [is](operation) forty-three. What's the number?
+    - The sum of [a number](unknown) [and](operation) fifteen [is](operation) thirty-two. Find the number.
+    - Four [times](operation) [a number](unknown) [is equal](operation) to twenty-four. What is the number?
+    - [One-third](multby) of [a number](unknown) [is](operation) seven. Find the number.
+    - [Half](multby) of [a number](unknown) [increased by](operation) twelve [is equal](operation) to twenty. What is the number?
+    - Three [times](operation) [a number](unknown) [decreased by](operation) seven [is equal](operation) to fourteen. Find the number.
+    - If you [double](multby) [a number](unknown) and [subtract](operation) six, the result [is equal](operation) to the [number itself](unknown). What is the number?
+    - 2 [plus](operation) 2 [equals](operation) to what?
+    - 3 [plus](operation) 4
+    - 25 [+](operation) 30
+    - 2 [-](operation) 1 [=](operation) [x](unknown)
+    - The [double](multby) of 4 [is](operation)
+    - one billion [plus](operation) one
+    - Two [and](operation) two [is](operation) three
+
+- regex: operation
+  examples: |
+    - [+\-*/=]
+
+- lookup: operation
+  examples: |
+    - " + "
+    - " - "
+    - " * "
+    - " / "
+    - " = "
+
+- lookup: multby
+  examples: |
+    - half
+    - a third
+    - a quarter
+    - double
+    - triple
+
+- regex: unknown
+  examples: |
+    - [x]
+
+- lookup: unknown
+  examples: |
+    - " x "
+
+- synonym: " x "
+  examples: |
+    - a number
+    - original number
+    - number itself
+  
+- synonym: " + "
+  examples: |
+    - add
+    - more
+    - plus
+    - and
+    - increase by
+    - increased by
+
+- synonym: " - "
+  examples: |
+    - subtract
+    - less
+    - difference
+    - minus
+    - decrease by
+    - decreased by
+
+- synonym: " * "
+  examples: |
+    - multiply by
+    - multiplied by
+    - by
+    - times
+    - product
+
+- synonym: " / "
+  examples: |
+    - split
+    - divide by
+
+- synonym: " = "
+  examples: |
+    - is equal
+    - match
+    - matches
+    - equals
+    - equality
+    - equal
+    - is
+
+- synonym: half
+  examples: |
+    - 1/2
+    - one-half
+
+- synonym: a third
+  examples: |
+    - 1/3
+    - one-third
+
+- synonym: a quarter
+  examples: |
+    - 1/4
+    - one-fourth
+    - one-quarter
+
+- synonym: double
+  examples: |
+    - twice
+
+- synonym: what's
+  examples: |
+    - what is
+    - What is
+    - What's
+
+- synonym: that is
+  examples: |
+    - that's
+    - That's

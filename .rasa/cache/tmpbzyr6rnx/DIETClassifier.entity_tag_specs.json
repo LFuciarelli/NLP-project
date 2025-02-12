@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-number1",
+      "2": "I-number1",
+      "3": "L-number1",
+      "4": "U-number1",
+      "5": "B-number2",
+      "6": "I-number2",
+      "7": "L-number2",
+      "8": "U-number2",
+      "9": "B-operation",
+      "10": "I-operation",
+      "11": "L-operation",
+      "12": "U-operation",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-number1": 1,
+      "I-number1": 2,
+      "L-number1": 3,
+      "U-number1": 4,
+      "B-number2": 5,
+      "I-number2": 6,
+      "L-number2": 7,
+      "U-number2": 8,
+      "B-operation": 9,
+      "I-operation": 10,
+      "L-operation": 11,
+      "U-operation": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]
