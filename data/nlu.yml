@@ -30,23 +30,54 @@ nlu:
 
 - intent: solve_equation
   examples: |
-    - Fifteen [more](operation) than [a quarter](multby) of [a number](unknown) [is](operation) 27. What is the number?
-    - Five [more](operation) than three [times](operation) [a number](unknown) [is](operation) twenty six. What is the value?
-    - If you [double](multby) [a number](unknown) and [add](operation) 5 to the result, then that [is](operation) 20 [more](operation) than [half](multby) of the [original number](multby). What's the original number?	
-    - Ten [more](operation) than the [product](operation) of three and [a number](unknown) [is](operation) forty-three. What's the number?
-    - The sum of [a number](unknown) [and](operation) fifteen [is](operation) thirty-two. Find the number.
-    - Four [times](operation) [a number](unknown) [is equal](operation) to twenty-four. What is the number?
-    - [One-third](multby) of [a number](unknown) [is](operation) seven. Find the number.
-    - [Half](multby) of [a number](unknown) [increased by](operation) twelve [is equal](operation) to twenty. What is the number?
-    - Three [times](operation) [a number](unknown) [decreased by](operation) seven [is equal](operation) to fourteen. Find the number.
-    - If you [double](multby) [a number](unknown) and [subtract](operation) six, the result [is equal](operation) to the [number itself](unknown). What is the number?
-    - 2 [plus](operation) 2 [equals](operation) to what?
-    - 3 [plus](operation) 4
-    - 25 [+](operation) 30
+    - the sum of [a number](unknown) [and](operation) eight [is](operation) twenty. find the number.
+    - seven [more](operation) than [a number](unknown) [is equal](operation) to twenty-five. what is the number?
+    - a store had 15 apples. They [added](operation) a number, making a [total of](operation) 40. how many were added?
+    - five [plus](operation) five [equals](operation) what?
+    - [a number](unknown) [increased by] 13 [is](operation) 30. what is the number?
+    - what is 2 [+](operation) 3?
+    - what is two [plus](operation) three?
+    - 3 [+](operation) 4 [=](operation)?
     - 2 [-](operation) 1 [=](operation) [x](unknown)
-    - The [double](multby) of 4 [is](operation)
-    - one billion [plus](operation) one
-    - Two [and](operation) two [is](operation) three
+    - 25 [plus](operation) 30 [equals](operation) to what?
+    - 5 [times](operation) 3 [equals](operation) what?
+    - the [difference](operation) between [a number](unknown) [and](operation) twelve [is](operation) five. find the number.
+    - [a number](unknown) [minus](operation) six [equals](operation) ten. what is the number?
+    - what is [x](unknown) [-](operation) 6 [=](operation) 10?
+    - three [times](operation) [a number](unknown) [is](operation) fifteen. what is the number?
+    - the result of [a number](unknown) [multiplied by](operation) 4 [is](operation) 28. what is the number?
+    - the result of [a number](unknown) [divided by](operation) 3 [is equal](operation) to 9. what is the number?
+    - when 64 is [divided by](operation) [a number](unknown), the result [is](operation) 8. what is the number?
+    - a person had [a number](unknown) of candies, which she [divided](operation) equally with her 5 friends. each [got](operation) 7 candies. how many did they have?
+    - if you 36 [divide by](operation) [a number](unknown), the result [is equal](operation) 6. what is the number?
+    - four [is equal](operation) to [twice](multby) [a number](unknown). find the number.
+    - when five [matches](operation) [a number](unknown) [plus](operation) three, what is the number?
+    - if three [is equal](operation) to [a number](unknown) [minus](operation) four, find the number.
+    - [the number](unknown) of apples in a box [equals](operation) [half](multiby) of 30. how many apples are in the box?
+    - [the number](unknown) of students in one class [is](operation) the same as 4 [times](operation) 6. how many students are there?
+    - [half](multby) of [a number](unknown) [is equal](operation) to 9. find the number.
+    - [one-half](multby) of [a number](unknown) [plus](operation) 4 [is](operation) 10. find the number.
+    - if you take [half](multby) of 20, what do you get?
+    - [a number](unknown) [divided by](operation) 2 [is](operation) 15. what is the number?
+    - if [half](multby) of [a number](unknown) [minus](operation) 3 [is](operation) 7, find the number.
+    - if you take [one-third](multby) of 18, what do you get?
+    - [a third](multby) of [a number](unknown) [plus](operation) 2 [equals](operation) 8. find the number.
+    - if [a number](unknown) is split [into](operation) 3 equal parts and one part [matches](operation) 11, what is the full number?
+    - [a quarter](multby) of [a number](unknown) [is](operation) 10. what is the number?
+    - if you take [one-fourth](multby) of 24, what do you get?
+    - [one-quarter](multby) of [a number](unknown) [plus](operation) 5 [is equal](operation) to 9. find the number.
+    - if you split 32 [into](operation) four equal parts, how big is one part?
+    - if you [double](multby)  [a number](unknown), you [get](operation) 18. find the number.
+    - the [double](multby) of 6 [is](operation) what?
+    - if you [double](multby) [a number](unknown) and then [subtract](operation) 4, the result equals 14. find the number.
+    - the [double](multby) of [a number](unknown) [plus](operation) 5 [is](operation) 25. find the number.
+    - if you [triple](multby) [a number](unknown), the result [is](operation) 21. what is the number?
+    - the [triple](multby) of 8 [is](operation) what?
+    - a man’s age is three [times](operation) his daughter’s. if she [is](operation) 10, how old is he?
+    - three [times](operation) [a number](unknown) [minus](operation) 2 [equals](operation) 16. what is the number?
+    - if you [triple](multby) [a number](unknown) and [subtract](operation) 5, the result [is equal](operation) to 19. find the number.
+    - twenty [more](operation) than [a third](multby) of [a number](unknown) [is](operation) 45. find the number.
+    - if you [double](multby) [a number](unknown) and [add](operation) 10 to the result, then that [is](operation) 30 [more](operation) than [half](multby) of the [original number](unknown). what is the number.
 
 - regex: operation
   examples: |
@@ -85,6 +116,7 @@ nlu:
 - synonym: " + "
   examples: |
     - add
+    - added
     - more
     - plus
     - and
@@ -99,6 +131,20 @@ nlu:
     - minus
     - decrease by
     - decreased by
+    - give
+    - gives
+    - gave
+    - lose
+    - lost
+    - spend
+    - spends
+    - spent
+    - eat
+    - eats
+    - ate
+    - sell
+    - sells
+    - sold
 
 - synonym: " * "
   examples: |
@@ -112,6 +158,8 @@ nlu:
   examples: |
     - split
     - divide by
+    - divided by
+    - divided into
 
 - synonym: " = "
   examples: |
@@ -122,34 +170,24 @@ nlu:
     - equality
     - equal
     - is
+    - total of
+    - result is
+    - get
+    - got
 
 - synonym: half
   examples: |
-    - 1/2
     - one-half
 
 - synonym: a third
   examples: |
-    - 1/3
     - one-third
 
 - synonym: a quarter
   examples: |
-    - 1/4
     - one-fourth
     - one-quarter
 
 - synonym: double
   examples: |
     - twice
-
-- synonym: what's
-  examples: |
-    - what is
-    - What is
-    - What's
-
-- synonym: that is
-  examples: |
-    - that's
-    - That's

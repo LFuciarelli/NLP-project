@@ -50,6 +50,7 @@ policies: null
 #     constrain_similarities: true
 
 pipeline:
+  - name: "preprocesser.Preprocesser"
   - name: "SpacyNLP"
     model: "en_core_web_md"
     case_sensitive: False
@@ -57,6 +58,7 @@ pipeline:
   - name: "SpacyFeaturizer"
   #- name: WhitespaceTokenizer
   - name: RegexFeaturizer
+    case_sensitive: False
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: DIETClassifier

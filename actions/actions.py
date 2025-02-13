@@ -2,14 +2,14 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 import sympy as sp
 import re
+from sympy.printing.str import StrPrinter
 
+# Removes non-mathematical terms
 def clean_equation(equation_str):
-    """Removes non-mathematical terms from an equation string."""
-
-    # Corrected regex pattern: matches only allowed characters
+    # Matches only allowed characters
     cleaned_equation = re.sub(r"[^+\-*/=x\d.\s/]", "", equation_str)
 
-    # Remove extra whitespace
+    # Removes extra whitespace
     cleaned_equation = re.sub(r"\s+", " ", cleaned_equation).strip()
 
     return cleaned_equation
@@ -25,6 +25,8 @@ def multby_helper(s):
         return "2 *"
     elif s == "triple":
         return "3 *"
+    elif str(s).find(".") >= 0:
+        return f"{s} *"
     else:
         return s
 
@@ -59,7 +61,9 @@ class SolveEquationAction(Action):
             # Case in which it is not an equation to solve but an equation to check the validity
             if len(solution) == 0:
                 solution = eval(equation.replace("=", "=="))
-            dispatcher.utter_message(f"The solution is: {solution}")
+                dispatcher.utter_message(f"The solution is: {solution}")
+            else:
+                dispatcher.utter_message(f"The solution is: { StrPrinter({'full_prec': False}).doprint(sp.Float(solution[0], 5))}")
         except Exception as e:
             dispatcher.utter_message(f"Could not parse equation: {equation}")
             dispatcher.utter_message(f"Please, try rephrasing your math problem.")
