@@ -47,7 +47,7 @@ responses:
   - text: "Hello, I'm Euler, a bot designed to solve math word problems."
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Bye!"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."

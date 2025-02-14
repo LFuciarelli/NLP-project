@@ -65,7 +65,6 @@ class SolveEquationAction(Action):
             else:
                 dispatcher.utter_message(f"The solution is: { StrPrinter({'full_prec': False}).doprint(sp.Float(solution[0], 5))}")
         except Exception as e:
-            dispatcher.utter_message(f"Could not parse equation: {equation}")
-            dispatcher.utter_message(f"Please, try rephrasing your math problem.")
+            dispatcher.utter_message(f"Could not parse the equation. \nPlease, try rephrasing your math problem.")
 
         return []

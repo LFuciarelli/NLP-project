@@ -17,7 +17,7 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: solve equation
+- rule: Solve equation based on the input prompt
   steps:
     - intent: solve_equation
     - action: action_solve_equation

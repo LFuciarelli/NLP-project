@@ -20,7 +20,7 @@ class Preprocesser(GraphComponent):
         for message in messages:
             text = message.get(TEXT)
             if text:
-                
+
                 # Expand contractions
                 expanded_text = contractions.fix(text)
 
@@ -33,6 +33,17 @@ class Preprocesser(GraphComponent):
 
                 # Convert text to lowercase
                 processed_text = formatted_text.lower()
+
+                # Handle operation recognition in cases in which word order is more complex
+                processed_text = re.sub(r"increase (.+) by (.+)", r"\1 increased by \2", processed_text)
+                processed_text = re.sub(r"decrease (.+) by (.+)", r"\1 decreased by \2", processed_text)
+                processed_text = re.sub(r"multiply (.+) by (.+)", r"\1 multiplied by \2", processed_text)
+                processed_text = re.sub(r"divide (.+) by (.+)", r"\1 divided by \2", processed_text)
+
+                processed_text = re.sub(r"subtract (.+) from (.+)", r"\1 subtract \2", processed_text)
+                processed_text = re.sub(r"difference between (.+) and (.+)", r"\1 minus \2", processed_text)
+                processed_text = re.sub(r"sum between (.+) and (.+)", r"\1 plus \2", processed_text)
+                processed_text = re.sub(r"sum of (.+) and (.+)", r"\1 plus \2", processed_text)
 
                 message.set(TEXT, processed_text)
 
