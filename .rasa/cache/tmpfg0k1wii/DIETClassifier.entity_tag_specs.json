@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-multby",
+      "2": "I-multby",
+      "3": "L-multby",
+      "4": "U-multby",
+      "5": "B-multiby",
+      "6": "I-multiby",
+      "7": "L-multiby",
+      "8": "U-multiby",
+      "9": "B-operation",
+      "10": "I-operation",
+      "11": "L-operation",
+      "12": "U-operation",
+      "13": "B-unknown",
+      "14": "I-unknown",
+      "15": "L-unknown",
+      "16": "U-unknown",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-multby": 1,
+      "I-multby": 2,
+      "L-multby": 3,
+      "U-multby": 4,
+      "B-multiby": 5,
+      "I-multiby": 6,
+      "L-multiby": 7,
+      "U-multiby": 8,
+      "B-operation": 9,
+      "I-operation": 10,
+      "L-operation": 11,
+      "U-operation": 12,
+      "B-unknown": 13,
+      "I-unknown": 14,
+      "L-unknown": 15,
+      "U-unknown": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

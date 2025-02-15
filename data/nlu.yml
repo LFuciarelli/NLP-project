@@ -80,7 +80,6 @@ nlu:
     - if you [double](multby) [a number](unknown) and [add](operation) 10 to the result, then that [is](operation) 30 [more](operation) than [half](multby) of the [original number](unknown). what is the original number.
     - a square piece of paper is 25 centimeters [by](operation) 20 centimeters, what is its area.
     - from five [subtract](operation) four
-    - the number, when [divided by] 3, is three less than twice 51.
 
 - regex: operation
   examples: |

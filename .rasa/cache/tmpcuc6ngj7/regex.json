@@ -1,0 +1,22 @@
+[
+  {
+    "name": "operation",
+    "pattern": "[+\\-*/=]"
+  },
+  {
+    "name": "unknown",
+    "pattern": "[x]"
+  },
+  {
+    "name": "operation",
+    "pattern": "(\\b\"\\ \\+\\ \"\\b|\\b\"\\ \\-\\ \"\\b|\\b\"\\ \\*\\ \"\\b|\\b\"\\ /\\ \"\\b|\\b\"\\ =\\ \"\\b)"
+  },
+  {
+    "name": "multby",
+    "pattern": "(\\bhalf\\b|\\ba\\ third\\b|\\ba\\ quarter\\b|\\bdouble\\b|\\btriple\\b)"
+  },
+  {
+    "name": "unknown",
+    "pattern": "(\\b\"\\ x\\ \"\\b)"
+  }
+]

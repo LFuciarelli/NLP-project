@@ -35,7 +35,7 @@ class SolveEquationAction(Action):
         return "action_solve_equation"
 
     def run(self, dispatcher, tracker, domain):
-        entities = tracker.latest_message.get("entities", []) or [] #tracker.latest_message.get("number") or [] 
+        entities = tracker.latest_message.get("entities", []) or []
         extracted_positions = {}
 
         for entity in entities:
@@ -56,9 +56,8 @@ class SolveEquationAction(Action):
             dispatcher.utter_message(f"Equivalent equation: {equation}")
             lhs, rhs = equation.split("=")
             solution = sp.solve(sp.sympify(lhs) - sp.sympify(rhs), x)
-            #solution = sp.solve(sp.sympify(equation))
 
-            # Case in which it is not an equation to solve but an equation to check the validity
+            # Case in which it is not an equation to solve but an equation to check the truth value
             if len(solution) == 0:
                 solution = eval(equation.replace("=", "=="))
                 dispatcher.utter_message(f"The solution is: {solution}")
